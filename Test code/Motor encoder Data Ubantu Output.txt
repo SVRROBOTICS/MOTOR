@@ -1,0 +1,42 @@
+########################## OUTPUT  on ubantu ###################################################
+nuc@nuc:~/catkin_ws_1/src$ /bin/python3 "/home/nuc/Downloads/Motor Encoder Data ubantu.py"
+Modbus connection successful
+Driver enabled.
+Driver1 enabled.
+Encoder reset.
+Encoder1 reset.
+Jogging mode enabled.
+Jogging mode1 enabled.
+Motor running at speed value 5000.
+Motor1 running at speed value 5000.
+Motor1 register value: 21
+Motor2 register value: 75992
+Motor1 register value: 165644
+Motor2 register value: 262697
+Motor1 register value: 352260
+Motor2 register value: 449278
+Motor1 register value: 538893
+Motor2 register value: 635768
+Motor1 register value: 725478
+Motor2 register value: 822428
+Motor1 register value: 911983
+Motor2 register value: 1008935
+Motor1 register value: 1098589
+Motor2 register value: 1195681
+Motor1 register value: 1285331
+Motor2 register value: 1382264
+Motor1 register value: 1471827
+Motor2 register value: 1568714
+Motor1 register value: 1658408
+Motor2 register value: 1755418
+Motor1 register value: 1844977
+Motor2 register value: 1941878
+Motor1 register value: 2031646
+Motor2 register value: 2088310
+Motor1 register value: 2088323
+Motor2 register value: 2088339
+Jogging mode stopped.
+Jogging mode1 stopped.
+Driver disabled.
+Driver1 disabled.
+nuc@nuc:~/catkin_ws_1/src$ 

@@ -1,0 +1,41 @@
+############ OUTPUT on windows  #####################
+PS C:\Users\Admin> & C:/Users/Admin/AppData/Local/Programs/Python/Python313/python.exe "c:/Users/Admin/Downloads/MOTOR Encoder Data Windows.py"
+Modbus Connection Successful
+Driver enabled.
+Driver enabled.
+Encoder value reset to zero.
+Encoder value reset to zero.
+Jogging mode enabled.
+Jogging mode enabled.
+Motor running at speed value 5000.
+Motor running at speed value 5000.
+Value at register for motor 1 40011: 36
+Value at register for motor 2 41011: 569
+Value at register for motor 1 40011: 193918
+Value at register for motor 2 41011: 198199
+Value at register for motor 1 40011: 406927
+Value at register for motor 2 41011: 411131
+Value at register for motor 1 40011: 620417
+Value at register for motor 2 41011: 627804
+Value at register for motor 1 40011: 836585
+Value at register for motor 2 41011: 840818
+Value at register for motor 1 40011: 1049613
+Value at register for motor 2 41011: 1053609
+Value at register for motor 1 40011: 1262735
+Value at register for motor 2 41011: 1267045
+Value at register for motor 1 40011: 1475922
+Value at register for motor 2 41011: 1503928
+Value at register for motor 1 40011: 1712226
+Value at register for motor 2 41011: 1716566
+Value at register for motor 1 40011: 1925203
+Value at register for motor 2 41011: 1929552
+Motor stopped after 10 seconds.
+Motor stopped after 10 seconds.
+Speed writing complete. Stopping read thread.
+Jogging mode stopped.
+Value at register for motor 1 40011: 2086898
+Value at register for motor 2 41011: 2084654
+Jogging mode stopped.
+Driver disabled.
+Driver disabled.
+PS C:\Users\Admin>
