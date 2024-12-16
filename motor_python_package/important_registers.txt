@@ -1,4 +1,27 @@
 Important
+Register Address for motor driver 
 
-Eq-
-1. 567890 - Encoder connection
+2 axis motor driver
+Left Motor
+Command Name    Register Address    Command OPcodes
+Enable Driver =      124              0x009F
+Disable Driver =     124              0x009E
+Start Jogging =      124              0x0096
+Stop Jogging =       124              0x00D8
+Write Speed =        342              
+Reset Encoder =      124              0x0098
+Read Double Word =   40010        
+Jog Acceleration =   338                
+Jog Deceleration =   340
+
+Right Motor
+Command Name    Register Address    Command OPcodes
+Enable Driver =      1124              0x009F
+Disable Driver =     1124              0x009E
+Start Jogging =      1124              0x0096
+Stop Jogging =       1124              0x00D8
+Write Speed =        1342              
+Reset Encoder =      1124              0x0098
+Read Double Word =   41010            
+Jog Acceleration =   1338
+Jog Deceleration =   1340
