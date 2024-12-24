@@ -9,6 +9,12 @@ Specification - 48V, Brushed DC Motor
 MBDV DC Motor Driver [Or Rename]
 Specification - Modbus
 
+## **Python Version
+python 3.13
+
+## **MODBUS VERSION
+pymodbus 3.6.1
+
 ## Project Plan
 1. Python Package - Modbus and motor functionality wrapper
 2. Testing Script - Test script
