@@ -209,18 +209,6 @@ def write_decel2(decel_value):
         print(f"Error writing to accel register {decel_register}: {e}")        
 
 
-# def read_register(register_address):
-#     zero_based_address = register_address - 40001  # Convert to zero-based address
-#     try:
-#         result = client.read_holding_registers(zero_based_address, 2)
-#         if result.isError():
-#             print(f"Error reading register {register_address}, error: {result}")
-#         else:
-#             print(f"Value at register {register_address}: {result.registers[0]}")
-#             return result.registers[0]
-#     except Exception as e:
-#         print(f"Error reading register {register_address}: {e}")
-
 def read_register_32bit1(register_address, endian='big'):
     """
     Reads a 32-bit value from a Modbus register.
