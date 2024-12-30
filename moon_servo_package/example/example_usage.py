@@ -4,10 +4,11 @@ from moon_servo.motor import MoonServoMotor
 from moon_servo import MoonServoMotor
 
 # Initialize the motor with the desired parameters
-motor = MoonServoMotor(port='/dev/ttyUSB0', baudrate=115200, base_address=0)
+motor1 = MoonServoMotor(port='/dev/ttyUSB0', baudrate=115200, base_address=0)
+motor2 = MoonServoMotor(port='/dev/ttyUSB0', baudrate=115200, base_address=1000)
 
 # Connect to the motor
-motor.connect()
+motor1.connect()
 
 # Create motor instance
 motor1 = MoonServoMotor(connection, base_address=0)  # Base address for motor 1
