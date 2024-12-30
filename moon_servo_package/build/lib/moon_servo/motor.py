@@ -1,6 +1,10 @@
 import time
 from .connection import ModbusConnection
 
+# REGISTER ADDRESSES FOR MOON SERVO MOTOR
+COMMAND_REGISTER = 124
+SPEED_REGISTER = 342   # 32-bit register
+
 class MoonServoMotor:
     def __init__(self, port='/dev/ttyUSB0', baudrate=115200, base_address: int = 0):
         connection: ModbusConnection = ModbusConnection(port=port, baudrate=baudrate, timeout=5, parity='N', stopbits=1, bytesize=8)
@@ -19,27 +23,27 @@ class MoonServoMotor:
         print("Modbus Connection Closed")
 
     def enable_driver(self):
-        command_register = self.base_address + 124
+        command_register = self.base_address + COMMAND_REGISTER
         opcode = 0x009F
         self._write_register(command_register, opcode, "Enable driver")
 
     def disable_driver(self):
-        command_register = self.base_address + 124
+        command_register = self.base_address + COMMAND_REGISTER
         opcode = 0x009E
         self._write_register(command_register, opcode, "Disable driver")
 
     def start_jogging(self):
-        command_register = self.base_address + 124
+        command_register = self.base_address + COMMAND_REGISTER
         opcode = 0x0096
         self._write_register(command_register, opcode, "Start jogging")
 
     def stop_jogging(self):
-        command_register = self.base_address + 124
+        command_register = self.base_address + COMMAND_REGISTER
         opcode = 0x00D8
         self._write_register(command_register, opcode, "Stop jogging")
 
     def set_speed(self, speed_value, run_time=10):
-        speed_register = self.base_address + 342
+        speed_register = self.base_address + SPEED_REGISTER
         self._write_32bit_register(speed_register, speed_value, "Set speed")
         time.sleep(run_time)
         self._write_32bit_register(speed_register, 0, "Stop motor after timeout")

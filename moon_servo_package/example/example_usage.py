@@ -1,5 +1,4 @@
 import time
-from moon_servo.connection import ModbusConnection
 from moon_servo.motor import MoonServoMotor
 from moon_servo import MoonServoMotor
 
@@ -9,9 +8,7 @@ motor2 = MoonServoMotor(port='/dev/ttyUSB0', baudrate=115200, base_address=1000)
 
 # Connect to the motor
 motor1.connect()
-
-# Create motor instance
-motor1 = MoonServoMotor(connection, base_address=0)  # Base address for motor 1
+motor2.connect()
 
 # Control motor
 motor1.enable_driver()
@@ -22,4 +19,4 @@ motor1.stop_jogging()
 motor1.disable_driver()
 
 # Close connection
-motor.disconnect()
+motor1.disconnect()
